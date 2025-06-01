@@ -1,6 +1,9 @@
 {
   "name": "My Codespace",
   "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+  "features": {
+    "ghcr.io/hspaans/devcontainer-features/pytest:1": {}
+  },
   "postCreateCommand": "pip install --upgrade pytest",
   "customizations": {
     "vscode": {
