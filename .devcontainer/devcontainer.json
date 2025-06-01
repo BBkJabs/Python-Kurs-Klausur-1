@@ -1,0 +1,20 @@
+{
+  "name": "My Codespace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+  "features": {
+    "ghcr.io/devcontainers/features/pytest:1": {}
+  },
+  "postCreateCommand": "pip install --upgrade pytest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy"
+      ],
+      "settings": {
+        "github.copilot.enable": false
+      }
+    }
+  }
+}
